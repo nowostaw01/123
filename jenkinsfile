@@ -18,7 +18,7 @@ DEPLOY_TO = "main environment"
         }
         stage('Scripting') {
             steps {
-                parallel [
+                parallel (
                 "taskOne" :{
                     echo 'Task one stuff:'
                     echo 'Deploying....'
@@ -26,7 +26,7 @@ DEPLOY_TO = "main environment"
                 "taskTwo" :{
                     echo 'task second stuff:'
                 }
-            ]
+            )
         }
     }
 }
