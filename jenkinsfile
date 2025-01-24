@@ -17,7 +17,7 @@ pipeline {
             steps {
                 parallel [
                 "taskOne" :[
-                    echo 'task one stuff:
+                    echo 'task one stuff:'
                     echo 'Deploying....'
                 ],
                 "taskTwo" :[
