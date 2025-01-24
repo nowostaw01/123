@@ -20,9 +20,9 @@ pipeline {
                     echo 'Task one stuff:'
                     echo 'Deploying....'
                 },
-                "taskTwo" :[
+                "taskTwo" :{
                     echo 'task second stuff:'
-                ]
+                }
             }
         }
     }
